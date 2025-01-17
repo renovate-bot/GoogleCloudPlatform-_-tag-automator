@@ -25,12 +25,22 @@ Finally, edit tags for a single resource or even to add/remove specific tags to 
 
 There is a **backend** (Python) and a **frontend** (Angular) to make it work.
 
-You have 2 options to install:
+To install:
+
+### Pre-requisites
+
+- Have `node/npm` installed and also angular CLI (`npm install @angular/cli`)
+- Have `gcloud` installed and authenticated, your user performing the installation must have the following IAM roles:
+  - roles/appengine.admin
+  - roles/iam.serviceAccountCreator
+  - roles/serviceusage.serviceUsageAdmin
+  - roles/iap.settingsAdmin
+  - roles/resourcemanager.projectIamAdmin
 
 ### Run a script
 
-1. Make sure to have `gcloud` installed and authenticated before running the `install.sh` script.
-2. Run `install.sh` and follow the steps.
+1. Hop inside the `frontend` folder, run `npm install` to download all frontend dependencies.
+2. Finally, go back to root folder, run `install.sh` and follow the steps.
 
 <!-- ### Terraform -->
 
